@@ -34,6 +34,7 @@ A simple and elegant weather application that provides current weather informati
 
 3. Open `index.html` in your preferred web browser.
 
+## You can access this website from ![here](https://ayush-weather-wizard-app.netlify.app/)
 ## Usage
 
 1. Enter the name of a city in the search bar.
