@@ -1,0 +1,118 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.searchbar {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.weather {
+    display: none;
+    transition: opacity 0.5s;
+}
+
+.weather:not(.loading) {
+    display: block;
+    opacity: 1;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+}
+
+.city {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.temp {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.feels_like {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.humidity, .wind {
+    margin: 5px 0;
+}
+
+footer {
+    font-size: 1em;
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .temp {
+        font-size: 2em;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .feels_like, .humidity, .wind {
+        font-size: 0.9em;
+    }
+}
